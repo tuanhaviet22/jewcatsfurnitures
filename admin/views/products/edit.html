@@ -1,0 +1,75 @@
+<!-- BEGIN: EDIT -->
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="{baseUrl}/admin/css/products/edit.css">
+
+<!-- SCRIPT -->
+<script src="{baseUrl}/admin/js/jquery-3.3.1.min.js"></script>
+<script src="https://cdn.ckeditor.com/4.11.3/standard/ckeditor.js"></script>
+
+<!-- HTML -->
+<form method="POST" enctype="multipart/form-data">
+	<table>
+		<tr>
+			<td colspan="2"><h4>Edit product</h4></td>
+		</tr>
+		<tr>
+			<th>Product Name</th>
+			<td>
+				<input type="text" name="txtName" value="{oldName}" class="form-control">
+			</td>
+        </tr>
+        <tr>
+			<th>Product Price</th>
+			<td>
+				<input type="text" name="txtPrice" value="{oldPrice}" class="form-control">
+			</td>
+        </tr>
+        <tr>
+			<th>Product Quantity</th>
+			<td>
+				<input type="text" name="txtQuantity" value="{oldQuantity}" class="form-control">
+			</td>
+        </tr>
+        <tr>
+			<th>Brand</th>
+			<td>
+				{selectBrand}
+			</td>
+        </tr>
+        <tr>
+			<th>Category</th>
+			<td>
+				{selectCategory}
+			</td>
+		</tr>
+		<tr>
+			<th>Product Image</th>
+			<td>
+				<div class="custom-file">
+					<input type="file" name="txtFileLocation" class="custom-file-input" id="customFile">
+					<label class="custom-file-label" for="customFile">Choose file...</label>
+				</div>
+			</td>
+        </tr>
+        <tr>
+			<th colspan="2" style="text-align: center">Description</th>
+		</tr>
+		<tr>
+			<td colspan="2"><textarea name="txtDescription">{oldDescription}</textarea></td>
+		</tr>
+		<!-- CKEDITOR -->
+		<script>
+			CKEDITOR.replace('txtDescription', {width:600, height:300, language:'vi'});
+			CKEDITOR.editorConfig = function( config ) {
+				config.enterMode = CKEDITOR.ENTER_BR;
+			}
+		</script>
+		<tr>
+			<td colspan="2" style="text-align: center">
+				<input type="submit" id="submit-btn" name="" value="Submit" class="btn btn-primary">
+			</td>
+		</tr>
+		<tr>{msg}</tr>
+	</table>
+</form>
+<!-- END: EDIT -->

@@ -1,0 +1,47 @@
+#nav-item-ord {
+	font-weight: bold;
+	border: 1px solid #DEE2E6;
+	color: #0056B3;
+}
+
+#search-box {
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+.btn {
+	width: 80px;
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+img {
+	height: 50px;
+}
+
+th, td {
+	text-align: center;
+}
+
+table {
+	margin-top: 20px;
+}
+
+h4 {
+	text-align: center;
+}
+
+.status {
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	border-radius: 50%;
+}
+
+select {
+	border-radius: 10px;
+}
+
+select:focus {
+	border-radius: 0px;
+}

@@ -1,0 +1,227 @@
+.cart .allcart{
+    margin: 10px auto;
+}
+
+.cart::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.cart .acol-8{
+    width: 73%;
+    float: left;
+    margin-left: 10px;
+    font-family: 'Rajdhani', sans-serif;
+    padding: 10px;
+    padding-left: none;
+    padding-right: none;
+    background: #EEE;
+    margin-top: 10px;
+    border-radius: 3px;
+}
+.cart #aone .col-3 img, #aone .col-3 p{
+    width: 100%;
+}
+
+.cart #aone .fixline{
+    display: inline;
+    width: 20%;
+    padding-left: 0px;
+    padding-right: 0px; 
+    text-align: center; 
+}
+
+.cart #aone .fixline1{
+    display: inline;
+    width: 30%;
+    text-align: center;
+}
+
+.cart #aone .fixbg {
+    background-color: transparent;
+    border:none;
+    margin-top: 10px;
+    display: inline ;
+}
+
+.cart .acol-8 p{
+    font-size: 17px;
+    font-weight: bold;
+    margin: 30px auto;
+
+}
+.cart .cl{
+    color: orange;
+}
+.cart .co{
+    background: #EEE;
+	padding-bottom: 30px;
+    float: right;
+    width: 25%;
+    margin-right:10px;
+    margin-top: 10px;
+    border-radius: 3px;
+    padding-right: 10px;
+}
+
+.cart .co i, .co p{
+    margin-left: 10px;
+}
+
+.cart .col-3,.col-3,.col-2,.col-2,.col-2{
+    text-align: center;
+}
+
+.cart .co .fass{
+	width: 50px;
+	font-size: 50px;
+	margin:20px auto;
+	text-align: center;
+	display: block;
+	position: relative;
+    animation: fassAnimaton 1.5s ease-out infinite;
+    -moz-animation: fassAnimaton 1.5s ease-out infinite;
+    -webkit-animation: fassAnimaton 1.5s ease-out infinite;
+    -o-animation: fassAnimaton 1.5s ease-out infinite;
+}
+
+@keyframes fassAnimaton {
+    from {top: -10px;}
+    to {top: 20px;}
+    from{opacity: 0}
+    to{opacity: 1}
+    from{color: yellow;}
+    to{color: #28A745;}
+}
+
+
+.cart .fs{
+	margin-top: 70px;
+}
+
+.cart .co i{
+    font-size: 20px;
+    width: 10%;
+}
+
+
+.cart input[class=formm]{
+	width: 85%;
+    margin-top:20px;
+	font-size: 17px;
+	background-color: transparent;
+	border: none;
+    border-bottom: 1px solid black;
+}
+
+.cart .acol-3 ::-webkit-input-placeholder{
+	color: #AAA;
+    font-family: 'ZCOOL XiaoWei', serif;
+}
+
+.cart .acol-3 p{
+	margin-top: 20px;
+	font-size: 20px;
+    font-family: 'Acme', sans-serif;
+
+}
+
+.cart .acol-3 input[type=button]{
+	font-size: 18px;
+	margin-top:30px;
+    /* font-family: 'Acme', sans-serif; */
+    margin-left: 20px;
+}
+
+@media only screen and (max-width: 1250px){
+    .cart .acol-8{
+        width: 61%;
+    }
+    .cart  .acol-3{
+        width: 36%;
+    }
+}
+
+
+@media only screen and (max-width: 1125px){
+    .cart .acol-8{
+        width: 62%;
+    }
+    .cart  .acol-3{
+        width: 35%;
+    }
+}
+
+
+@media only screen and (max-width: 970px){
+    .cart .acol-8{
+        width: 90%;
+        margin: 0px auto;
+        float: none;
+    }
+    .cart  .acol-3{
+        width: 90%;
+        margin: 10px auto;
+        float: none;
+        border-top:1px dashed black;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .cart .acol-8 p{
+        font-size: 10px;
+        margin-top:0px;
+    }
+    .cart #aone .fixline1 {
+       width:100%;
+    }
+    .cart #aone .fixline{
+       display: none;
+    }
+}
+
+
+/* PAY MODAL */
+.cart .pay {
+    padding: 10px;
+    font-size: 17px;
+}
+.cart .pay table {
+    margin: 10px auto;
+    table-layout:fixed;
+    width: 90%;
+}
+.cart .pay tr, td, th {
+    padding: 5px;
+}
+.cart .pay th {
+    width: 30%;
+}
+.cart .pay td {
+    width: 70%;
+    word-break: break-all;
+}
+.cart .pay .bill {
+    border-bottom: 2px dashed #CACACA;
+}
+.cart .pay .bill h2{
+    text-align: center;
+}
+.cart .pay .bill button{
+    display: inline-block;
+    
+}
+.cart .pay-method h2{
+    text-align: center;
+}
+.cart .pay-method p{
+    display: block;
+    margin-left: 20px;
+}
+.cart .pay #click-pay{
+    width: 70px;
+    display: block;
+    margin: auto;
+    font-size: 20px;
+}

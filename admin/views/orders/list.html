@@ -1,0 +1,43 @@
+<!-- BEGIN: LIST -->
+<!-- jQuery for AJAX (duma!) -->
+<script src="{baseUrl}/admin/js/jquery-3.3.1.min.js"></script>
+
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="{baseUrl}/admin/css/orders/list.css">
+
+<!-- AJAX -->
+<script src="{baseUrl}/admin/js/ajax/orders-status-display.js"></script>
+<script src="{baseUrl}/admin/js/ajax/orders-status-change.js"></script>
+
+<!-- HTML -->
+<h4>Orders</h4>
+<table class="table">
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>Date Time</th>
+			<th>Customer Name</th>
+			<th>Total Price</th>
+			<th>Status</th>
+			<th>Action</th>
+		<tr>
+	</thead>
+	<tbody id="search-records">
+		<!-- BEGIN: LOOP -->
+		<tr>
+			<td>{LOOP.id}</td>
+			<td>{LOOP.ord_datetime}</td>
+			<td>{LOOP.cus_name}</td>
+			<td>{LOOP.ord_price}</td>
+			<td>
+				{status_selector}
+			</td>
+			<td>
+				<a href="?m=orderdetails&a=list&id={LOOP.id}">Details</a>
+			</td>
+		</tr>
+		<!-- END: LOOP -->
+	</tbody>
+</table>
+
+<!-- END: LIST -->

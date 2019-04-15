@@ -1,0 +1,42 @@
+<!-- BEGIN: ADD -->
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="{baseUrl}/admin/css/staffs/add.css">
+
+<!-- HTML -->
+<form method="POST" enctype="multipart/form-data">
+	<table>
+		<tr>
+			<td colspan="2"><h4>Add staff</h4></td>
+		</tr>
+		<tr>
+			<th>Name</th>
+			<td>
+				<input type="text" name="txtName" class="form-control">
+			</td>
+		</tr>
+		<tr>
+			<th>Role</th>
+			<td>
+				<input type="text" name="txtRole" class="form-control">
+			</td>
+		</tr>
+		<tr>
+			<th>Phone Number</th>
+			<td>
+				<input type="text" name="txtPhone" class="form-control">
+			</td>
+		</tr>
+        <tr>
+            <th>Salary</th>
+            <td>
+                <input type="text" name="txtSal" class="form-control">
+            </td>
+        </tr>
+		<tr>
+			<td></td>
+			<td><input type="submit" id="submit-btn" class="btn btn-primary" value="Add"></td>
+		</tr>
+		<tr>{msg}</tr>
+	</table>
+</form>
+<!-- END: ADD -->

@@ -1,0 +1,52 @@
+#nav-item-pro {
+	font-weight: bold;
+	border: 1px solid #DEE2E6;
+	color: #0056B3;
+}
+
+table {
+	text-align: center;
+}
+
+#search-box {
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+.btn {
+	width: 80px;
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+img {
+	height: 100px;
+}
+
+.status-box {
+	width: 50px;
+	height: 30px;
+	border: 1px solid #4CD864; 
+	background-color: #4CD864;
+	border-radius: 20px;
+	position: relative;
+}
+
+.toggler {
+	border: 1px solid white;
+	width: 25px;
+	height: 26px;
+	background-color: white;
+	border-radius: 20px;
+	position: absolute;
+	left: 22px;
+	top: 1px;
+}
+
+table {
+	margin-top: 20px;
+}
+
+h4 {
+	text-align: center;
+}

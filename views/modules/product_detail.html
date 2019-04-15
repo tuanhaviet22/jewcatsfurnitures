@@ -1,0 +1,212 @@
+<!-- BEGIN: PRODUCT_DETAIL -->
+<section class="pro-details">
+   <!-- SCRIPTS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <script src="{baseUrl}/js/libs_js/animatedModal.js"></script>
+  <script src="{baseUrl}/js/product_detail.js"></script>
+  <script src="{baseUrl}/js/add_to_cart.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{baseUrl}/css/modules/product_detail.css">
+  <link rel="stylesheet" href="{baseUrl}/css/libs_css/animate.min.css">
+  <link rel="stylesheet" href="{baseUrl}/carousel/docs/assets/owlcarousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="{baseUrl}/carousel/docs/assets/owlcarousel/assets/owl.theme.default.min.css">
+  <script src="{baseUrl}/carousel/docs/assets/owlcarousel/owl.carousel.js"></script>
+  <link rel="stylesheet" href="{baseUrl}/css/libs_css/normalize.min.css">
+  
+  <!-- FONTS -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+    <!-- MAIN -->
+    <div class="container-fluid">    
+      <div class="row" style="margin:0px">
+        <div class="x img col-12 col-sm-6  col-md-7 col-lg-7">
+          <img src="{baseUrl}/admin/images/products/{pro_img}" alt="{pro_img}">
+        </div>
+        
+        <div class="x col-12 col-sm-5  col-md-5 col-lg-5">
+          <p class="category"><a href="?m=products&a=products&cat={cat_id}">{cat_name}</a></p>
+          <p class="name-product">{pro_name}</p>
+          <div style="height:100px">
+            <span class="price">{pro_price}$</span><br>
+            <span class="add-card"><button id="eat-me-sempai" type="button" class="btn btn-info">ADD TO CART</button></span>
+            <br><span class="quantity">QUANTITY: {pro_quantity}</span>
+          </div>
+            <hr>
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="tab" href="#home">Specifications</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#menu1">Idea</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#menu2">Feedback</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="exportHTML" href="#"><i class="fas fa-download"></i> Document</a>
+                </li>
+              </ul>
+            
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div id="home" class="container tab-pane active" style="height:400px;overflow:auto;font-size:16px;text-align: left" ><br>
+                    {pro_description}
+                </div>
+                <div id="menu1" class="container tab-pane fade" style="height:400px;overflow:auto;"><br>
+                  <div class="profile-des row">
+                      <div class="col-12 col-md-5">
+                      <img src="{baseUrl}/images/index/designer1.jpg" alt="">
+                    </div>
+                    <div class="col-12 col-md-7">
+                      <span>Designer Lorem </span>
+                    <p> enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                  </div>
+                </div>
+                <div id="menu2"  class="container tab-pane fade" style="height:400px;overflow:auto;text-align: left"><br>
+                  <div class="comment">
+                    <span><i class="far fa-user"></i><strong>Lorem Ipsum</strong><img src="{baseUrl}/images/product_Detail/stars.jpg" alt="starts"></span>
+                    <p>enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  </div>
+                  <div class="comment">
+                      <span><i class="far fa-user"></i><strong>Lorem Ipsum</strong><img src="{baseUrl}/images/product_Detail/stars.jpg" alt="starts"></span>
+                      <p>enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <div class="comment">
+                        <span><i class="far fa-user"></i><strong>Lorem Ipsum</strong><img src="{baseUrl}/images/product_Detail/stars.jpg" alt="starts"></span>
+                        <p>enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      </div>
+                </div>
+              </div>
+            <hr>
+            
+              
+        </div>
+      </div>
+      
+      <!-- SO SANH SAN PHAM  -->
+<section class="sosanh">
+  <h3> RELATED PRODUCTS</h3>
+  <div class="owl-sosanh owl-carousel owl-theme owl-loaded">
+      <div class="owl-stage-outer">
+          <div class="owl-stage">
+            <!-- BEGIN: SAME_PRODUCTS -->
+            <div class="owl-item hover-sosanh">
+              <div class="hovereffect">
+                <a href="?m=product_detail&a=product_detail&id={SAME_PRODUCTS.id}"><img class="img-responsive" src="{SAME_PRODUCTS.baseUrl}/admin/images/products/{SAME_PRODUCTS.pro_img}" alt=""></a>
+                    <div class="overlay">
+                        <div>
+                          <span class="hover-name"><a class='demo01' href="#directmodal{SAME_PRODUCTS.id}">COMPARE</a></span>
+                          <span class="hover-name"><a href="?m=product_detail&a=product_detail&id={SAME_PRODUCTS.id}">DETAILS</a></span>
+                        </div>
+                    </div>
+              </div>
+                
+              </div>
+             <!-- END: SAME_PRODUCTS  -->
+          </div>
+         
+          </div>
+      </div>
+ 
+   
+      <!-- BEGIN: MODAL_LOOP -->
+      <div class="" id="directmodal{MODAL_LOOP.id}">
+        
+            <div class="close-container close-directmodal{MODAL_LOOP.id}">
+              <div class="leftright"></div>
+              <div class="rightleft"></div>
+            </div>
+
+        <div class="modal-content">
+              <div class="row">
+                <div class="col-md-6 col-12" style="border-right : 1px solid #2a2a2a ;">
+                  <div>
+                    <img src="{baseUrl}/admin/images/products/{cmp_pro_img}" style="width : 58%;" alt="">
+                    <div class="direct">
+                        <p>{cmp_pro_name}</p>                       
+                        <span class="price">{cmp_pro_price}$</span>
+                    </div>
+                  </div>
+                    <table class="table">
+                        <tr>
+                          <td>Width</td>
+                          <td>Lorem</td>
+                        </tr>
+                        <tr>
+                            <td>Height</td>
+                            <td>Lorem</td>
+                          </tr>
+                          <tr>
+                              <td>Weight</td>
+                              <td>Lorem</td>
+                            </tr>
+                            <tr>
+                                <td>Material</td>
+                                <td>Lorem</td>
+                              </tr>
+                              <tr>
+                                  <td>Brand</td>
+                                  <td>Lorem</td>
+                                </tr>
+                                <tr>
+                                    <td>Designer</td>
+                                    <td>Lorem</td>
+                                  </tr>
+                      </table>
+                </div>
+
+                <div class="col-md-6 col-12" style="border-right : 1px solid #2a2a2a ;">
+                    <div>
+                      <img src="{baseUrl}/admin/images/products/{MODAL_LOOP.pro_img}" style="width : 58%;" alt="">
+                      <div class="direct">
+                          <p>{MODAL_LOOP.pro_name}</p>
+                          <span class="price">{MODAL_LOOP.pro_price}$</span>  
+                      </div>
+                    </div>
+                      <table class="table">
+                          <tr>
+                            <td>Width</td>
+                            <td>Lorem</td>
+                          </tr>
+                          <tr>
+                              <td>Height</td>
+                              <td>Lorem</td>
+                            </tr>
+                            <tr>
+                                <td>Weight</td>
+                                <td>Lorem</td>
+                              </tr>
+                              <tr>
+                                  <td>Material</td>
+                                  <td>Lorem</td>
+                                </tr>
+                                <tr>
+                                    <td>Brand</td>
+                                    <td>Lorem</td>
+                                  </tr>
+                                  <tr>
+                                      <td>Designer</td>
+                                      <td>Lorem</td>
+                                    </tr>
+                        </table>
+                  </div>
+              </div>
+        </div>
+      </div>
+      
+      <!-- END: MODAL_LOOP -->
+      
+
+
+
+
+
+    </div>
+</section>
+<!-- END: PRODUCT_DETAIL -->

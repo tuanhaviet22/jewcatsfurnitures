@@ -1,0 +1,137 @@
+<!-- BEGIN: HOMEPAGE -->
+<section class="home">
+<div class="container">  
+    <h2 id="recommend">product recommendations</h2>
+    <!-- Slide Img -->
+    <div id="owl-example" class="owl-carousel owl-theme owl-loaded ">
+        <div class="owl-stage-outer">
+          <div class="owl-stage">
+            <!-- BEGIN: RECOMENDLOOP -->
+            <div class="owl-item"><a href="?m=product_detail&a=product_detail&id={RECOMENDLOOP.id}" class="textOverImage" style="background-image:url('{RECOMENDLOOP.baseUrl}/admin/images/products/{RECOMENDLOOP.pro_img}')" data-title="{RECOMENDLOOP.pro_name}" data-text="{RECOMENDLOOP.brd_name}" ></a></div>
+            <!-- END: RECOMENDLOOP -->
+          </div>
+        </div>
+    </div>
+    <!-- End slide -->
+    <h2 id="high-office">INNOVATIVE DESIGN SOLUTIONS FOR THE OFFICE</h2>
+      <!-- Offce Chair  -->
+        <div class="row">
+            <!-- BEGIN: OFFICELOOP -->
+            <div class=" col-md-3 col-sm-6 col-xs-6 " >
+                <img src="{OFFICELOOP.baseUrl}/admin/images/products/{OFFICELOOP.pro_img}" alt="{OFFICELOOP.pro_name}" class="img_item">
+                <span class="title">{OFFICELOOP.pro_name}</span>
+                <br>
+                <span class="small">{OFFICELOOP.cat_name}</span>
+                <span class="detail"><a href="?m=product_detail&a=product_detail&id={OFFICELOOP.id}">More</a></span>
+            </div>
+            <!-- END: OFFICELOOP -->
+        </div>
+        <ul class="text-right">
+          <li><a style="color: #2a2a2a !important ;" href="#">See More <i class="fas fa-angle-double-right"></i></a></li>
+        </ul>
+      <!-- End -->
+    <div class="container-fluid" style="background : #2a2a2a ;height: 300px;">
+        <div class="brand-middle">
+          <img src="{baseUrl}/images/index/brand_sale._middle.jpg" alt="">
+        </div>
+    </div>
+    <br>
+    <div class="container">
+    <!-- Home -->
+    <h2 id="high-office">THE MOST IMPORTANT FURNITURE FOR THE HOME</h2>
+    
+    <div class="row">
+        <!-- BEGIN:HOMELOOP -->
+      <div class=" col-md-3 col-sm-6 col-xs-6 " >
+        <img src="{HOMELOOP.baseUrl}/admin/images/products/{HOMELOOP.pro_img}" alt="{HOMELOOP.pro_name}" class="img_item">
+        <span class="title">{HOMELOOP.pro_name}</span>
+        <br>
+        <span class="small">{HOMELOOP.cat_name}</span>
+        <span class="detail"><a href="?m=product_detail&a=product_detail&id={HOMELOOP.id}">More</a></span>
+      </div>
+        <!-- END:HOMELOOP -->
+
+    </div>
+      <ul class="text-right">
+        <li><a style="color: #2a2a2a !important ;" href="#">See More <i class="fas fa-angle-double-right"></i></a></li>
+      </ul>
+    <!-- End -->
+
+
+      <!-- Designer -->
+      <h2 id="high-office">DESIGNER</h2>
+   <div class="row">
+      <div class="col-md" id="off-chair"><a href="#">
+        <img src="{baseUrl}/images/index/designer.jpg" alt="">
+        <span class="title">TOM DIXON</span>
+        <br>
+        <span class="small">London, United Kingdom</span>
+        <br>
+        <span class="small">Since 2012</span>
+        </a>
+      </div>
+      <div class="col-md" id="off-chair">
+        <img src="{baseUrl}/images/index/designer.jpg" alt=""><a href="#">
+        <span class="title">TOM DIXON</span>
+        <br>
+        <span class="small">London, United Kingdom</span>
+        <br>
+        <span class="small">Since 2012</span>
+        </a>
+      </div>
+      <div class="col-md" id="off-chair">
+        <img src="{baseUrl}/images/index/designer.jpg" alt=""><a href="#">
+        <span class="title">TOM DIXON</span>
+        <br>
+        <span class="small">London, United Kingdom</span>
+        <br>
+        <span class="small">Since 2012</span>
+        </a>
+      </div>
+      <div class="col-md" id="off-chair">
+        <img src="{baseUrl}/images/index/designer.jpg" alt=""><a href="#">
+        <span class="title">TOM DIXON</span>
+        <br>
+        <span class="small">London, United Kingdom</span>
+        <br>
+        <span class="small">Since 2012</span>
+        </a>
+      </div>
+   </div>
+   <ul class="text-right">
+      <li><a style="color: #2a2a2a !important ;" href="#">See More <i class="fas fa-angle-double-right"></i></a></li>
+    </ul>
+
+    <!-- End  -->
+</div>
+<div class="container-fluid" style="background : #2a2a2a ;height: 300px;">
+    <div class="brand-middle">
+      <img src="{baseUrl}/images/index/brand_sale._middle_1.jpg" alt="">
+    </div>
+</div>
+<div class="container" id="logo">
+  <h2 class="" id="high-office">ALLIANCE PARTNERS</h2>
+  <div class="row">
+    <div class="col-md-2">
+      <img src="{baseUrl}/images/index/logo1.jpg" alt="">
+    </div>
+    <div class="col-md-2">
+        <img src="{baseUrl}/images/index/logo3.jpg" alt="">
+    </div>
+    <div class="col-md-2">
+        <img src="{baseUrl}/images/index/logo3.jpg" alt="">
+      </div>
+    <div class="col-md-2">
+        <img src="{baseUrl}/images/index/logo4.jpg" alt="">
+    </div>
+    <div class="col-md-2">
+        <img src="{baseUrl}/images/index/logo5.jpg" alt="">
+    </div>
+    <div class="col-md-2">
+      <img src="{baseUrl}/images/index/logo6.jpg" alt="">
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- END: HOMEPAGE -->

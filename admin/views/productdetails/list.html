@@ -1,0 +1,49 @@
+<!-- BEGIN: LIST -->
+
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="{baseUrl}/admin/css/productdetails/list.css">
+
+<!-- SCRIPT -->
+<script src="{baseUrl}/admin/js/jquery-3.3.1.min.js"></script>
+<script src="https://cdn.ckeditor.com/4.11.3/standard/ckeditor.js"></script>
+
+<!-- HTML -->
+<h4>Product Details</h4>
+<table class="table">
+    <tr>
+        <th>Product Name</th>
+        <td>{LS.pro_name}</td>
+    </tr>
+    <tr>
+        <th>Brand</th>
+        <td>{LS.brd_name}</td>
+    </tr>
+    <tr>
+        <th>Category</th>
+        <td>{LS.cat_name}</td>
+    </tr>
+    <tr>
+        <th>Quantity</th>
+        <td>{LS.pro_quantity}</td>
+    </tr>
+    <tr>
+        <th>Price</th>
+        <td>{LS.pro_price}</td>
+    </tr>
+    <tr>
+        <th>Description</th>
+        <td></td>
+    </tr>
+    <tr>
+        <td colspan="2"><textarea id="prodes">{LS.pro_description}</textarea></td>
+    </tr>
+    <!-- CKEDITOR -->
+    <script>
+        CKEDITOR.replace('prodes', {width:900, height:300, language:'vi'});
+        CKEDITOR.editorConfig = function( config ) {
+            config.enterMode = CKEDITOR.ENTER_BR;
+        }
+    </script>
+</table>
+
+<!-- END: LIST -->

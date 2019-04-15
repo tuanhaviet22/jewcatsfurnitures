@@ -1,0 +1,440 @@
+@font-face {
+    font-family: "font main"  ; 
+    src: url(../../fonts/Gravur-Condensed.woff) ; 
+
+}
+.pro-details .pro-details a{
+    color : black !important; 
+    
+}
+.pro-details .x img { 
+    width: 100% ;
+    /* height: 100%; */
+    vertical-align: top;
+}
+@media only screen and (max-width: 900px){
+    .img { 
+        height: unset ;
+    }
+    .category { 
+        margin-top : 1em !important ; 
+        
+    }
+   
+}
+
+.pro-details h3{
+  margin-left: 10px !important;
+}
+
+.pro-details .category {
+   font-size: 24px;  
+   text-transform: uppercase ; 
+    letter-spacing: 5px;  
+    margin-top : 1em  ;
+}
+
+.pro-details .name-product { 
+    font-size: 48px ; 
+    color: #3498db  ;
+}
+.pro-details .table tr{
+    line-height: 16px;
+    
+}
+.pro-details .price {
+    font-size: 36px ; 
+    color: red ; 
+}
+.pro-details .quantity {
+    margin-top: 2px;
+    display: block; 
+}
+.pro-details .add-card {
+    margin: 28px;
+}
+.pro-details .profile-des img{ 
+    border-radius:12% ; 
+}
+.pro-details .profile-des span {
+    font-size: 24px ; 
+    font-weight: 400 ;
+}
+.pro-details .comment i{
+    font-size: 24px; 
+    padding-right: 10px ;
+}
+.pro-details .comment p {
+    padding-left: 20px;
+}
+.pro-details .comment {
+    border: none ; 
+    border-radius: 5px; 
+    background: #FAFAFA  ;
+
+}
+.pro-details .comment img{
+    width: 16%;
+}
+
+/*MENU RESPONSIVE*/
+
+
+.pro-details #back-layer{
+    width: 84.4%;
+    background-color: transparent;
+    position: relative;
+    max-width: 830px;
+    float: right;
+    position: absolute;
+    right: 0 ;
+    border-radius: 5px;
+    height: 50px; 
+    top:50px; 
+    z-index: -99;
+    background-color: black;
+    opacity: 0.7;
+  
+  }
+  
+  .pro-details .clearfix span{
+    font-size: 15px;
+   font-family: 'Sniglet', cursive;
+  
+   padding: 10px;
+   border-radius: 10px;
+  
+  }
+  
+  
+  .pro-details nav li {
+    display: inline;
+    float: left;
+  }
+  
+  
+  
+  
+  .pro-details nav a {
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    line-height: 40px;
+    margin-left: 10px;
+    
+  }
+  
+  
+  .pro-details nav li a {
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+  }
+  
+  
+  
+  
+  
+  .pro-details nav a:hover, nav a:active {
+    background-color: transparent;
+  }
+  
+  
+  
+  .pro-details nav a#pull {
+    display: none;
+  }
+  
+  .pro-details #pull{
+    text-align: center;
+    font-family: 'Merienda', cursive;
+    font-weight: bold;
+    margin-top: 6px;
+  }
+  
+  /* placehoder */
+  .pro-details ::-webkit-input-placeholder{
+    font-family: "font main" ;
+    font-size: 20px;
+  }
+  
+  
+  .pro-details .img_item{
+    width: 100% ;
+  }
+  .pro-details .row {
+    text-align: center ;
+  }
+
+
+
+/* SO SANH */
+.pro-details .sosanh img{
+    width: 100%;
+}
+@media only screen and (max-width : 450px){
+  .pro-details .sosanh {
+    margin-top : 9em !important; 
+}
+}
+.pro-details .sosanh {
+  margin-top: 6em ; 
+}
+
+
+
+.pro-details  .hover-sosanh {
+     
+      position: relative;
+  }
+  .pro-details  .hover-sosanh img {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  .pro-details  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    bottom: 1em ; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .pro-details   .hover-sosanh:hover .img {
+    opacity: 0.3;
+  }
+  
+  .pro-details  .hover-sosanh:hover .middle {
+    opacity: 1;
+  }
+  
+  .pro-details   .text {
+    background-color: #2a2a2a;
+    color: white;
+    font-size: 16px;
+    padding: 10px ;
+    opacity: 0.5;
+  }
+
+/* BTN COLOSE MODAL */
+
+.pro-details .close-container {
+  position: relative;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  margin-top: 10px ; 
+  margin-bottom: 10px ;
+  cursor: pointer;
+}
+
+.pro-details .leftright {
+  height: 4px;
+  width: 50px;
+  position: absolute;
+  margin-top: 24px;
+  background-color: white;
+  border-radius: 2px;
+  transform: rotate(45deg);
+  transition: all 0.3s ease-in;
+}
+
+.pro-details .rightleft {
+  height: 4px;
+  width: 50px;
+  position: absolute;
+  margin-top: 24px;
+  background-color: white;
+  border-radius: 2px;
+  transform: rotate(-45deg);
+  transition: all 0.3s ease-in;
+}
+
+.pro-details .close {
+  margin: 60px 0 0 5px;
+  position: absolute;
+}
+
+.pro-details .close-container:hover .leftright {
+  transform: rotate(-45deg);
+  background-color: #17a2b8;
+}
+
+.pro-details .close-container:hover .rightleft {
+  transform: rotate(45deg);
+  background-color: #17a2b8;
+}
+
+.pro-details .close-container:hover label {
+  opacity: 1;
+}
+
+
+/* MODAL */
+
+.pro-details .animated{
+  background: #2a2a2a !important  ;
+}
+
+.pro-details .modal-content .direct{
+  width: 40%;
+  display: inline-block ;
+  
+}
+
+.pro-details .modal-content p{
+  text-transform: uppercase ; 
+  color : #3498DB;
+  font-size: 30px;
+  margin-bottom: 10px;
+  padding: 0px;
+}
+@media only screen and (max-width : 450px){
+  .pro-details .modal-content .col-12{
+    border-bottom: 1px solid #2a2a2a ;
+  }
+}    
+
+/* HOVER SLIDE  */
+
+.pro-details .hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+.pro-details .hover-name {
+  width: 50%;
+  line-height: 26px ;
+}
+
+.pro-details .hover-name a {
+  color: white !important;
+  font-size: 16px;
+}
+.pro-details .hover-name:nth-child(odd){
+  border-right: 1px solid white;
+}
+.pro-details .hovereffect .overlay {
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  top: auto;
+  bottom: 0;
+  height: 50px ;  
+
+  background: #79FAC4;
+  color: #3c4a50;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(0,100%,0);
+  transform: translate3d(0,100%,0);
+  visibility: hidden;
+
+}
+
+.pro-details .hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+}
+
+.pro-details .hovereffect:hover img {
+-webkit-transform: translate3d(0,-10%,0);
+transform: translate3d(0,-10%,0);
+}
+
+.pro-details .hovereffect span {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 12px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  float: left;
+  margin: 0px;
+  display: inline-block;
+}
+
+.pro-details .hovereffect a.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  text-transform: uppercase;
+color: #fff;
+border: 1px solid #fff;
+margin: 50px 0 0 0;
+background-color: transparent;
+}
+.pro-details .hovereffect a.info:hover {
+  box-shadow: 0 0 5px #fff;
+}
+
+
+.pro-details .hovereffect p.icon-links a {
+float: right;
+color: #3c4a50;
+font-size: 1.4em;
+}
+
+.pro-details .hovereffect:hover p.icon-links a:hover,
+.pro-details .hovereffect:hover p.icon-links a:focus {
+color: #252d31;
+}
+
+.pro-details .hovereffect span,
+.pro-details .hovereffect p.icon-links a {
+-webkit-transition: -webkit-transform 0.35s;
+transition: transform 0.35s;
+-webkit-transform: translate3d(0,200%,0);
+transform: translate3d(0,200%,0);
+visibility: visible;
+}
+
+.pro-details .hovereffect p.icon-links a span:before {
+display: inline-block;
+padding: 8px 10px;
+speak: none;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+
+.pro-details .hovereffect:hover .overlay,
+.pro-details .hovereffect:hover span,
+.pro-details .hovereffect:hover p.icon-links a {
+-webkit-transform: translate3d(0,0,0);
+transform: translate3d(0,0,0);
+}
+
+.pro-details .hovereffect:hover span {
+-webkit-transition-delay: 0.05s;
+transition-delay: 0.05s;
+}
+
+.pro-details .hovereffect:hover p.icon-links a:nth-child(3) {
+-webkit-transition-delay: 0.1s;
+transition-delay: 0.1s;
+}
+
+.pro-details .hovereffect:hover p.icon-links a:nth-child(2) {
+-webkit-transition-delay: 0.15s;
+transition-delay: 0.15s;
+}
+
+.pro-details .hovereffect:hover p.icon-links a:first-child {
+-webkit-transition-delay: 0.2s;
+transition-delay: 0.2s;
+}

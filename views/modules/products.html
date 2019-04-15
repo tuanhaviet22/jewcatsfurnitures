@@ -1,0 +1,53 @@
+<!-- BEGIN: PRODUCTS -->
+<link rel="stylesheet" href="{baseUrl}/css/modules/products.css">
+<section class="products">
+  <div class="container-fluid" style="background : #FAFAFA ;">
+    <div class="row">
+      <!-- ==================== -->
+      <div class="col-md-3 col-12">
+          <div id="dt-col1">
+              <a class="dt-request">BRAND</a>
+              <div class="center-col1">
+                  <span class="title">BRAND</span>
+                  <ul>
+                    <!-- BEGIN: LIST_BRANDS -->
+                      <li><a id="supper-use-delete" href="?m=products&a=products&brd={LIST_BRANDS.id}">{LIST_BRANDS.brd_name}</a></li>
+                    <!-- END: LIST_BRANDS -->
+                  </ul>
+              </div>
+          </div>
+          <div id="dt-col1">
+              <a class="dt-request">CATEGORY</a>
+              <div class="center-col1">
+                  <span class="title">CATEGORY</span>
+                  <ul>
+                    <!-- BEGIN: LIST_CATEGORIES -->
+                    <li><a id="supper-use-delete" href="?m=products&a=products&cat={LIST_CATEGORIES.id}">{LIST_CATEGORIES.cat_name}</a></li>
+                    <!-- END: LIST_CATEGORIES -->
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <!-- ========================== -->
+      <div class="col-md col-12">
+        <div id="dt-col2"><h3 style="text-transform: uppercase;">{title}</h3>
+          <div class="row row-rule" id="use-delete" >
+            <!-- BEGIN: LIST_PRODUCTS -->
+            <div class="col-md-3 col-6 col-rule" >   
+              <div class="hovereffect">
+                <a href="?m=product_detail&a=product_detail&id={LIST_PRODUCTS.id}"><img class="img-responsive" src="{LIST_PRODUCTS.baseUrl}/Durable-Furnitures/admin/images/products/{LIST_PRODUCTS.pro_img}" alt="{LIST_PRODUCTS.pro_name}"></a>
+                <div class="overlay">
+                  <div>
+                    <span class="hover-name"><a href="?m=product_detail&a=product_detail&id={LIST_PRODUCTSid}">{LIST_PRODUCTS.pro_name}</a></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- END: LIST_PRODUCTS -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END: PRODUCTS -->

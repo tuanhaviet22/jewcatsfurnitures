@@ -1,0 +1,24 @@
+<!-- BEGIN: EDIT -->
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="{baseUrl}/admin/css/categories/edit.css">
+
+<!-- HTML -->
+<form method="POST" enctype="multipart/form-data">
+	<table>
+		<tr>
+			<td colspan="2"><h4>Edit category</h4></td>
+		</tr>
+		<tr>
+			<th>Name</th>
+			<td>
+				<input type="text" name="txtName" value="{oldName}" class="form-control">
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><input type="submit" id="submit-btn" class="btn btn-primary" value="Submit"></td>
+		</tr>
+		<tr>{msg}</tr>
+	</table>
+</form>
+<!-- END: EDIT -->

@@ -1,0 +1,200 @@
+@font-face {
+    font-family: "font main"  ; 
+    src: url(../../fonts/Gravur-Condensed.woff) ; 
+
+}
+
+*{
+    box-sizing: border-box ; 
+    margin: 0px ; 
+    padding: 0px ; 
+    font-family: "font main"; 
+}
+
+.list-inline a, .hide-menu a {
+    color: white !important  ;
+}
+.container-fluid {
+    padding : 0 !important; 
+}
+
+/* HEADER */
+.header {
+    z-index: 99;
+    width: 100%;
+    height: 150px ; 
+    background: #2a2a2a ; 
+    color: white  ;
+    -webkit-box-shadow: 0px 11px 20px 3px rgba(0,0,0,0.42);
+    -moz-box-shadow: 0px 11px 20px 3px rgba(0,0,0,0.42);
+    box-shadow: 0px 11px 20px 3px rgba(0,0,0,0.42);
+
+    position: relative;
+    animation: headerAnimation 0.5s ease-out ;
+    -moz-animation: headerAnimation 0.5s ease-out ;
+    -o-animation: headerAnimation 0.5s ease-out ;
+}
+
+@keyframes headerAnimation {
+    from {top: -50px;}
+    to {top: 0px;}
+}
+
+.header ul li {
+    padding: .5em ; 
+}
+.header .container ul { 
+    width: 50%;
+    position: absolute;
+    margin-left: 1em;
+    
+   
+}
+
+
+nav img {
+    width: 100%;
+    height: 100%;
+}
+
+nav.container input{
+    width: 60%;
+    height: 30px;
+    max-width: 70%;
+    border: none ; 
+    border-radius: 5px ; 
+    position: absolute;
+    top : 40px ;
+    margin-left: 1em ;
+
+    
+}
+nav.container input {
+   height: 33px; 
+}
+
+@media only screen and (max-width : 1070px){
+    .header .container ul.list-inline{
+        display: none !important ; 
+    }
+    nav.container input {top: 4em  ;}
+} 
+.hamburger {
+    position: absolute ; 
+    display: none !important; 
+    right: 11% ;
+    top : 4.85em ;
+    padding: 0 !important; 
+}
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{
+    width: 30px !important;
+}
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{
+    background-color: white !important ; 
+}
+.anh , .nd {
+    
+    display: inline-block ; 
+}
+.anh {
+    width: 20%;
+    height: 4.5em;
+}
+
+.nd form input {
+    width: 55%;
+}
+
+/* Mobile Views */
+@media only screen and (max-width : 1070px){
+    .anh {
+        width: 22% !important;
+        height: 34px !important;
+        margin-top:  22px !important ; 
+    }
+    .hamburger {
+        display: block !important;
+    }
+    nav.container input{
+        margin-left: 0.5em !important;
+    }
+    .header {
+        height: 120px  ; 
+    }
+
+}
+.nd ul li{
+    text-transform: uppercase; 
+    text-align: center  ; 
+}
+@media only screen and (min-width: 450px){
+    .nd ul li a:hover{
+        text-decoration: none; 
+    }
+    .nd ul li:hover{
+        border-bottom:  2px solid white ; 
+    }
+}
+.nd ul {
+    line-height: 10px; 
+
+}
+
+.hide-menu .list li{
+    display: block;
+    list-style: none;
+    background: #2a2a2a;
+    width: 120%;
+    line-height: 40px;
+    margin-left: -7px;
+}
+
+.list {
+    top : 6em ; 
+}
+
+
+/* FOOTER */
+.footer {
+    height: 400px ;
+    background:  #2a2a2a;
+    margin-top:10px;
+
+}
+.footer .dotted {
+    border-bottom: 2px dashed #fff;
+    padding-bottom: 2.1428571429rem !important;
+    margin-bottom: 2.5rem;
+}
+.footer li a {
+    color: white ; 
+    text-transform: uppercase ; 
+    list-style: none ;
+}
+.footer li a:hover{
+    text-decoration: none; 
+    font-weight: bold;
+} 
+
+span i {
+    color: white ; 
+    font-size:  24px ;
+    margin: 20px ;
+}
+
+
+/* MENU SCROLL EVENT */
+.fixed {
+    position: fixed;
+    z-index: 99;
+    height: 120px;
+    top: 0px;
+    animation: fixedAnimation 0.5s ease-out ;
+    -moz-animation: fixedAnimation 0.5s ease-out ;
+    -o-animation: fixedAnimation 0.5s ease-out ;
+}
+
+@keyframes fixedAnimation {
+    from {top: -50px;}
+    to {top: 0px;}
+}

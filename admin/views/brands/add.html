@@ -1,0 +1,33 @@
+<!-- BEGIN: ADD -->
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="{baseUrl}/admin/css/brands/add.css">
+
+<!-- HTML -->
+<form method="POST" enctype="multipart/form-data">
+	<table>
+		<tr>
+			<td colspan="2"><h4>Add brand</h4></td>
+		</tr>
+		<tr>
+			<th>Name</th>
+			<td>
+				<input type="text" name="txtName" class="form-control">
+			</td>
+		</tr>
+		<tr>
+			<th>Logo</th>
+			<td>
+				<div class="custom-file">
+					<input type="file" name="txtFileLocation" class="custom-file-input" id="customFile">
+					<label class="custom-file-label" for="customFile">Choose file...</label>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><input type="submit" id="submit-btn" class="btn btn-primary" value="Add"></td>
+		</tr>
+		<tr>{msg}</tr>
+	</table>
+</form>
+<!-- END: ADD -->

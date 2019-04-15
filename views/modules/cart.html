@@ -1,0 +1,105 @@
+<!-- BEGIN: CART -->
+<section class="cart">
+	<!--FONTS-->
+	<link href="https://fonts.googleapis.com/css?family=Sniglet" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
+
+  	<!--ICONS-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!-- SCRIPT -->
+	<script src="{baseUrl}/js/libs_js/jquery.min.js"></script>
+
+	<!-- AJAX -->
+	<script src="{baseUrl}/js/ajax/load_cart.js"></script>
+
+	<!--CSS-->
+	<link rel="stylesheet" type="text/css" href="{baseUrl}/css/modules/cart.css">
+	
+
+
+	<form method="POST" name>
+		<div id="backgrd">
+			<div id="backgrd" class="allcart">
+				<div id="aone" class="acol-8">
+					<div class="container-fluid" id="cart-records">
+					
+					</div>
+				</div>			
+				<div class="co acol-3">
+					<i class='far fa-hand-point-down fass'></i>
+					<div class="fs"></div>
+					<i class='fas fa-user'></i>
+					<input id="a" type="text" name="txtName" class="formm"  placeholder="Your Full name" value="{cus_name}" required>
+					<i class='fas fa-map-marker-alt'></i>
+					<input id="b" type="text" name="txtPlace" class="formm"  placeholder="Your Place" value="{cus_address}" required>
+					<i class='fas fa-phone'></i>
+					<input id="c" type="tel" name="txtPhone" class="formm" placeholder="Your phone number" value="{cus_phone}" required>
+					<i class='fas fa-mail-bulk'></i>
+					<input id="d" type="email" name="txtEmail" class="formm" placeholder="Your Email" value="{cus_mail}" required>
+					<p><span>Total products: </span><span class="total-quantity"></span></p>
+					<p><span>Total money: </span><b class="cl total-price"></b></p>
+					<a id="modal-toggle" data-toggle="modal" data-target="#payModal"><input class="btn btn-success" type="button" name="txtSM" value="SEND ORDER"></a>
+				</div>
+			</div>
+		</div>
+	</form>
+	
+	<!-- MODAL -->
+	<div class="modal fade" id="payModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<!-- MODAL BODY -->
+					<div class="pay">
+						<div class="bill">
+							<h2>BILL INFORMATION</h2>
+							<table>
+								<tr>
+									<th>Name:</th>
+									<td id="cus-name">{cus_name}</td>		
+								</tr>
+								<tr>
+									<th>Phone:</th>
+									<td id="cus-phone">{cus_phone}</td>
+								<tr>
+									<th>Email:</th>
+									<td id="cus-mail">{cus_mail}</td>
+								</tr>
+								<tr>
+									<th>Address:</th>
+									<td id="cus-address">{cus_address}</td>
+								</tr>
+								<tr>
+									<th>Total money:</th>
+									<td class="total-price"></td>
+								</tr>
+							</table>
+							<br>
+						</div>
+						<div class="pay-method">
+							<br>
+							<h2>PAYMENT METHODS</h2>
+							<br>
+							<p><input type="radio" name="txtPay" required> Payment on delivery <i class="fas fa-truck"></i></p>
+							<p><input type="radio" name="txtPay" required> Pay by ATM card <i class="far fa-credit-card"></i></p>
+							<p><input type="radio" name="txtPay" required> Payment by Visa card <i class="fab fa-cc-visa"></i></p>					
+							<button id="click-pay" type="button" class="btn btn-success" disabled>Pay</button>							</div>
+						</div>
+					</div>
+					<!-- END -->
+				</div>
+		  	</div>
+		</div>
+	</div>
+	<!-- END -->
+</section>
+<!-- END: CART -->

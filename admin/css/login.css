@@ -1,0 +1,123 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-image: url("../images/login/pexels-photo-271743.jpeg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.container {
+	margin: 50px auto;
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+	text-align: center;
+	
+}
+
+h5 {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+form {
+	max-width: 400px;
+	margin: auto;
+	border: 1px solid #DADCE0;
+	border-radius: 5px;
+	padding: 60px;
+	padding-bottom: 20px; 
+	background-image: url("../images/login/Untitled.png");
+}
+
+.label {
+	margin-bottom: 20px;
+	font-weight: bold;
+	margin: 5px auto;
+}
+
+input {
+	padding-left: 5px;
+	margin: auto;
+}
+
+.form-control {
+	height: 45px;
+	margin-top: 10px !important;
+}
+
+.btn {
+	margin-top: 20px;
+	width: 30%;
+	height: 45px;
+	font-weight: bold;
+	font-size: 26px;
+	padding-top: 3px;
+	display: inline-block;
+}
+
+small {
+	color: tomato;
+	padding: 3px;
+	font-style: italic;
+	display: inline-block;
+	width: 68%;
+}
+
+.credit {
+	display: block;
+	text-align:  center;
+	margin-top: 45px;
+}
+
+::-webkit-input-placeholder {
+	font-style: italic;
+	font-size: 14px;
+}
+
+/* SCROLLBAR */
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background-image: url("../images/login/pexels-photo-271743.jpeg");
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-image: url("../images/login/Untitled.png");
+	border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #AEAEAE;
+}
+
+
+/* ANIMATION */
+.container {
+	position: relative;
+    animation: containerAnimation 1s ease-out ;
+    -moz-animation: containerAnimation 1s ease-out ;
+    -o-animation: containerAnimation 1s ease-out ;
+}
+
+@keyframes containerAnimation {
+    from {top: -80px;}
+    to {top: 0px;}
+    from {opacity: 0.1;}
+    to {opacity: 1;}
+}
+
+
+

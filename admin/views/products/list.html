@@ -1,0 +1,76 @@
+<!-- BEGIN: LIST -->
+<!-- jQuery for AJAX (duma!) -->
+<script src="{baseUrl}/admin/js/jquery-3.3.1.min.js"></script>
+
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="{baseUrl}/admin/css/products/list.css">
+
+<!-- AJAX -->
+<script type="text/javascript" src="{baseUrl}/admin/js/ajax/products-status-display.js"></script>
+<script type="text/javascript" src="{baseUrl}/admin/js/ajax/products-status-change.js"></script>
+<script type="text/javascript" src="{baseUrl}/admin/js/ajax/products-search.js"></script>
+<script type="text/javascript" src="{baseUrl}/admin/js/ajax/products-search-by-something.js"></script>
+
+<!-- HTML -->
+<h4>Products</h4>
+<div class="row">
+	<div class="input-group col-sm-4" id="search-box">
+		<div class="input-group-prepend">
+			<span class="input-group-text">Search</span>
+		</div>
+		<input type="text" name="txtSearch" class="form-control">
+	</div>
+	<div class="col-sm-1">
+		<a href="?m=products&a=add">
+			<input type="button" class="btn btn-secondary" value="Add" >
+		</a>
+	</div>
+</div>
+<div class="row">
+	<div class="input-group col-sm-2">
+		{selectorBrand}
+	</div>
+	<div class="input-group col-sm-3">
+		{selectorCategory}
+	</div>
+</div>
+<table class="table">
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>Product Name</th>
+            <th>Brand</th>
+            <th>Category</th>
+			<th>Price</th>
+            <th>Image</th>
+            <th>Quantity</th>
+            <th>Status</th>
+            <th>Action</th>
+		<tr>
+	</thead>
+	<tbody id="search-records">
+		<!-- BEGIN: LOOP -->
+		<tr>
+			<td>{LOOP.id}</td>
+			<td><a href="?m=productdetails&a=list&id={LOOP.id}">{LOOP.pro_name}</a></td>
+            <td>{LOOP.brd_name}</td>
+            <td>{LOOP.cat_name}</td>
+			<td>{LOOP.pro_price}</td>
+            <td>
+                <img src="{baseUrl}/admin/images/products/{LOOP.pro_img}">
+            </td>
+            <td>{LOOP.pro_quantity}</td>
+            <td>
+                <div class="status-box" id="{LOOP.id}">
+                    <div class="toggler"></div>
+                </div>
+            </td>
+			<td>
+				<a href="?m=products&a=edit&id={LOOP.id}">Edit</a>
+			</td>
+		</tr>
+		<!-- END: LOOP -->
+	</tbody>
+</table>
+
+<!-- END: LIST -->

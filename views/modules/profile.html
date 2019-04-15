@@ -1,0 +1,82 @@
+<!-- BEGIN: PROFILE -->
+<section class="profile">
+		<!--CSS-->
+		<link rel="stylesheet" href="{baseUrl}/css/modules/profile.css">
+		<!-- SCRIPTS -->
+		<script src="{baseUrl}/js/profile.js"></script>
+		<!-- AJAX -->
+		<script src="{baseUrl}/js/ajax/logout.js"></script>
+		<script src="{baseUrl}/js/ajax/change_info.js"></script> 
+    <script src="{baseUrl}/js/ajax/change_adr.js"></script> 
+
+
+		<div class="allprof">
+				<div class="prof">
+					<div class="infom">
+						<h2>Personal information</h2>
+						<p>Full name : <b>{cus_name}</b></p>
+						<p>Username : <b>{cus_usn}</b></p>
+						<p>Email : <b>{cus_mail}</b></p>
+						<p>Phone number : <b>{cus_phone}</b></p>
+						<button id="c-inform" type="button" class="btn btn-info">Change</button>
+					</div>
+					<div class="address-local">
+						<h2>Address</h2>
+						<p style="word-break:break-all;">Payment address and delivery : <br><b>{cus_address}</b></p>
+						<button id="a-inform" type="button" class="btn btn-info">Change</button>
+						<br>
+						<button id="logout-btn" class="btn btn-danger">Log out</button>
+					</div>
+					<div id="p-inform" class="change-prof">
+						<p><button id="hid1" type="button" class="btn btn-secondary">x</button><br><br>
+						<input type="text" name="txtName" class="form-control" placeholder="Full name" value="{cus_name}">
+						<input id="ck-pw" type="checkbox" name="txtCheck">Change password
+						<span class="pass">
+						<input type="password" name="txtPw" class="form-control pass" placeholder="Password">
+						<input type="password" name="txtRpw" class="form-control pass" placeholder="Re-Password">
+						</span>
+						<input type="email" name="txtEmail" class="form-control" value="{cus_mail}" placeholder="Email">
+						<input type="tel" name="txtTel" class="form-control" value="{cus_phone}" placeholder="Phone number">
+						<input type="password" name="txtPass" class="nguyencho form-control" placeholder="Please enter password to change!" required>
+						<button class="btn btn-success" id="btn-change-info-or-pass">Change</button>
+					</div>
+					<div id="pa-inform" class="change-prof">
+						<p><button  id="hid2" type="button" class="btn btn-secondary">x</button><br><br>
+						<input type="text" name="txtAddress" class="form-control" placeholder="Address">
+						<button type="button" class="btn btn-success" id="btn-change-adr">Change</button>
+					</div>
+				</div>
+				
+			</div>
+	<div class="current-order">		
+		<table class="table table-hover">
+			<thead>
+			  <tr>
+				<th>ID</th>
+				<th>Date Time</th>
+				<th>Total Price</th>
+				<th>Status</th>
+				<th colspan="2"></th>
+			  </tr>
+			</thead>
+			<tbody>
+				<!-- BEGIN: LOOP -->
+			  <tr>
+				<td>{LOOP.id}</td>
+				<td>{LOOP.ord_datetime}</td>
+				<td>{LOOP.total_price}$</td>
+				<td>{LOOP.ord_status}</td>
+				<td><a class="oniiiii" href="?m=order_detail&a=order_detail&id={LOOP.id}">Detail</a></td>
+				<td>
+					<!-- <form method="POST">
+							<input type="submit" class="btn btn-danger" value="Cancel">
+					</form> -->
+					<a href="?m=cancel_order&a=cancel_order&id={LOOP.id}"><button class="btn btn-danger">cancel</button></a>
+				</td>
+			  </tr>
+				<!-- END: LOOP -->
+			</tbody>
+		  </table>
+	</div>
+</section>
+<!-- END: PROFILE -->

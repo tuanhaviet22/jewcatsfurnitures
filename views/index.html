@@ -1,0 +1,190 @@
+<!-- BEGIN: INDEX -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>ฅ^•ω•^ฅ JewCats Furnitures</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="{baseUrl}/js/libs_js/sweetAlert.js"></script>
+    <script src="{baseUrl}/js/index.js"></script>
+    <script src="{baseUrl}/js/login.js"></script>
+    
+
+    <!-- AJAX -->
+    <script src="{baseUrl}/js/libs_js/jquery.min.js"></script>
+    <script src="{baseUrl}/js/ajax/login.js"></script> 
+    <script src="{baseUrl}/js/ajax/register.js"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="{baseUrl}/css/libs_css/hamburgers.css">
+    <link rel="stylesheet" href="{baseUrl}/css/index/index.css">
+    <link rel="stylesheet" href="{baseUrl}/css/login.css">
+    
+    <!-- FONTS -->
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- fix error favicon.ico -->
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
+
+
+    <!-- SLIDE -->
+    <link rel="stylesheet" href="{baseUrl}/css/libs_css/owl.carousel.min.css">
+    <link rel="stylesheet" href="{baseUrl}/css/libs_css/owl.theme.default.min.css">
+    <!-- END -->
+  </head>
+  <body>
+      <div class="container-fluid">
+          <div class="header">
+            <!-- MODAL -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                      <!-- MODAL BODY -->
+                      <div class="all">
+                        <div class="sl1">
+                          <div id="op1">
+                            <span class="cov">LOGIN</span>
+                            <br>
+                            <span class="fa fa-user"></span>
+                          </div>
+                          <div id="op2">
+                            <span class="cov">REGISTER</span>
+                            <br>
+                            <span class='fas fa-pencil-alt'></span>
+                          </div>
+                          <div id="op3">
+                            <span class="cov">FORGOT PASSWORD</span>
+                            <br>
+                            <span class='fas fa-lock'></span>
+                          </div>
+                        </div>
+                        <div class="sl2">
+                          <div id="section1">
+                            <br><br><br>
+                            <input type="text" name="txtUsn" class="form-control" placeholder="Username" required>
+                            <input type="password" name="txtPw" class="form-control" placeholder="Password" required><br>
+                            <button class="btn btn-primary" id="btn-login">Login</button>
+                          </div>
+                          <div id="section2">
+                            <br>
+                            <input type="text" name="txtName" class="form-control" placeholder="Full name" required>
+                            <input type="text" name="txtUrs" class="form-control" placeholder="Username" required>
+                            <input type="password" name="txtPass" class="form-control" placeholder="Password" required>
+                            <input type="password" name="txtRepw" class="form-control" placeholder="Re-enter password" required>
+                            <input type="email" name="txtEmail" class="form-control" placeholder="Email" required>
+                            <input type="tel" name="txtTel" class="form-control" placeholder="Phone number" required><br>
+                            <button class="btn btn-success" id="btn-register">Register</button>
+                          </div>
+                          <div id="section3">
+                            <br><br>
+                            <p>Reset your password? Please provide email address that you used when you signed up account. We will send you an email with a confirmation code. </p>
+                            <input type="email" name="txtmail" placeholder="Email" class="form-control" required><br>
+                            <button class="btn btn-danger" id="btn-forgot">Send</button>
+                          </div>
+                        </div>
+                    </div>
+                   <!-- END -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END -->
+          
+                <ul class="list-inline text-right" style="margin-bottom : 0px !important;">
+                    <li class="list-inline-item">
+                      <a href="" id="signin-nee-onii-chan" data-toggle="modal" data-target="#exampleModal">Sign In</a>
+                      <a href="?m=profile&a=profile" id="onii-chan-no-profile"></a>
+                    </li>
+                    <li class="list-inline-item">Newsletters</li>
+                </ul>
+                <nav class="container">
+                  <div class="anh">
+                    <a href="{baseUrl}"><img src="{baseUrl}/images/index/prjlogo.png" alt=""></a>
+                  </div>
+                    <div class="nd">
+                      <form action="" method="GET">
+                        <input type="text" style="padding: 10px;" placeholder="You can search every things !!!">
+                      </form>
+                    <ul class="list-inline">
+                      <li class="list-inline-item"><i class="fas fa-home"></i><a href="{baseUrl}"> Home</a></li>
+                      <li class="list-inline-item"><i class="fas fa-archive"></i><a href="?m=products&a=products"> Products</a></li>
+                      <li class="list-inline-item"><i class="fas fa-shopping-cart"></i><a href="?m=cart&a=cart"> Cart</a></li>                      
+                      <li class="list-inline-item"><i class="fas fa-phone"></i><a href="?m=contact_us&a=contact_us"> Contact us</a></li>
+                      <li class="list-inline-item"><i class="fas fa-users"></i><a href="?m=about_us&a=about_us"> About us</a></li>
+                    </ul>
+                    <div class="hamburger xham hamburger--3dxy-r">
+                      
+                        <div class="hamburger-inner"></div>
+                      
+                    </div>
+                    <div class="hide-menu " style="display: none; z-index: 9999;">
+                        <ul class="list">
+                            <li class="list-item"><a href="{baseUrl}">Home</a></li>
+                            <li class="list-item"><a href="?m=products&a=products">Products</a></li>
+                            <li class="list-item"><a href="?m=cart&a=cart">Cart</a></li>
+                            <li class="list-item"><a href="?m=contact_us&a=contact_us">Contact us</a></li>
+                            <li class="list-item"><a href="?m=about_us&a=about_us">About us</a></li>
+                          </ul>
+                    </div>
+                  </div>
+                </div>
+            
+              </nav>
+<!-- MODULES -->
+{contents}
+<!-- END -->
+          <section class="footer">
+              <div class="dotted"></div>
+              <div class="container">
+              <div class="row">
+                <div class="col-6 col-md">
+                  <ul>
+                    <li><a href="#">guides</a></li>
+                    <li><a href="#">contact</a></li>
+                    <li><a href="#">about</a></li>
+                  </ul></div>
+                  <div class="col-6 col-md">
+                    <ul>
+                    <li><a href="#">team</a></li>
+                    <li><a href="#">privacy</a></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-md">
+                  <span style="color : white ;font-size: 18px;">NEWSLETTERS</span>
+                   <!-- <form action="https://script.google.com/macros/s/AKfycbyR62-SOWItFhKHgBFkvQfhL7zV13Nuj6wqOzHkARAmK2sCxRS4/exec"> -->
+                    
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Enter your email" aria-label="Enter your email" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                          <button class="btn btn-outline-secondary" id="subcribe" type="button" style="color : white !important;">SUBSCRIBE</button>
+                        </div>
+                      </div>
+                       <!-- </form> -->
+                    <span><i class="fab fa-facebook-square"></i></span>
+                    <span><i class="fab fa-facebook-messenger"></i></span>
+                    <span><i class="fab fa-github"></i></span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+      </div>
+  </body>
+</html>
+
+<!-- END: INDEX -->

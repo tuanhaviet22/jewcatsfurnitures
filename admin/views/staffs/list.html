@@ -1,0 +1,60 @@
+<!-- BEGIN: LIST -->
+<!-- jQuery for AJAX (duma!) -->
+<script src="{baseUrl}/admin/js/jquery-3.3.1.min.js"></script>
+
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="{baseUrl}/admin/css/staffs/list.css">
+
+<!-- AJAX -->
+<script type="text/javascript" src="{baseUrl}/admin/js/ajax/staffs-status-display.js"></script>
+<script src="{baseUrl}/admin/js/ajax/staffs-search.js"></script>
+
+<!-- HTML -->
+<h4>Staffs</h4>
+<div class="row">
+	<div class="input-group col-sm-4" id="search-box">
+		<div class="input-group-prepend">
+			<span class="input-group-text">Search</span>
+		</div>
+		<input type="text" name="txtSearch" class="form-control">
+	</div>
+	<div class="col-sm-1">
+		<a href="?m=staffs&a=add">
+			<input type="button" class="btn btn-secondary" value="Add" >
+		</a>
+	</div>
+</div>
+
+<table class="table">
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>Name</th>
+			<th>Role</th>
+			<th>Phone Number</th>
+            <th>Salary</th>
+            <th>Status</th>
+			<th>Action</th>
+		<tr>
+	</thead>
+	<tbody id="search-records">
+		<!-- BEGIN: LOOP -->
+		<tr>
+			<td>{LOOP.id}</td>
+			<td>{LOOP.stf_name}</td>
+			<td>{LOOP.stf_role}</td>
+			<td>{LOOP.stf_phone}</td>
+            <td>{LOOP.stf_salary}</td>
+            <td>
+				<div id="{LOOP.id}" class="status"></div>
+				{status}
+			</td>
+			<td>
+				<a href="?m=staffs&a=edit&id={LOOP.id}">Edit</a>
+			</td>
+		</tr>
+		<!-- END: LOOP -->
+	</tbody>
+</table>
+
+<!-- END: LIST -->

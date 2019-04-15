@@ -1,0 +1,23 @@
+#nav-item-pro {
+	font-weight: bold;
+	border: 1px solid #DEE2E6;
+	color: #0056B3;
+}
+
+.btn {
+	width: 80px;
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+h4 {
+    text-align: center;
+}
+
+table {
+    margin-top: 20px;
+}
+
+table td {
+    text-align: right;
+}

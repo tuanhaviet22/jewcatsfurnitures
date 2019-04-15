@@ -1,0 +1,20 @@
+#nav-item-cat {
+	font-weight: bold;
+	border: 1px solid #DEE2E6;
+	color: #0056B3;
+}
+
+.btn {
+	width: 80px;
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+table {
+	margin-top: 20px;
+	text-align: center;
+}
+
+h4 {
+	text-align: center;
+}

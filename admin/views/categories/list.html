@@ -1,0 +1,37 @@
+<!-- BEGIN: LIST -->
+<!-- jQuery for AJAX (duma!) -->
+<script src="{baseUrl}/admin/js/jquery-3.3.1.min.js"></script>
+
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="{baseUrl}/admin/css/categories/list.css">
+
+<!-- HTML -->
+<h4>Categories</h4>
+
+<a href="?m=categories&a=add">
+    <input type="button" class="btn btn-secondary" value="Add" >
+</a>
+	
+
+<table class="table">
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>Name</th>
+			<th>Action</th>
+		<tr>
+	</thead>
+	<tbody>
+		<!-- BEGIN: LOOP -->
+		<tr>
+			<td>{LOOP.id}</td>
+			<td>{LOOP.cat_name}</td>
+			<td>
+				<a href="?m=categories&a=edit&id={LOOP.id}">Edit</a>
+			</td>
+		</tr>
+		<!-- END: LOOP -->
+	</tbody>
+</table>
+
+<!-- END: LIST -->

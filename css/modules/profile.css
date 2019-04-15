@@ -1,0 +1,136 @@
+.profile a:hover {
+    text-decoration: none;
+}
+.profile .allprof{
+    background-color: #DDD;
+    width:100%;
+    height: 360px;
+    font-family: 'PT Sans', sans-serif;
+}
+.profile .prof{
+    width: 80%;
+    margin:0px auto;
+    
+}
+.profile .infom{
+    width: 49.5%;
+    float: left;
+    height: 270px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-top: 25px;
+}
+.profile .infom h2{
+    text-align: center;
+}
+.profile .infom p{
+    display: block;
+    margin-left:10px;
+}
+.profile .infom button{
+    display: block;
+    margin: 10px auto;
+}
+.profile .address-local{
+    width: 49.5%;
+    float: right;
+    height: 270px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-top: 25px;
+}
+.profile .address-local h2{
+    text-align: center;
+}
+.profile .address-local p{
+    margin-left:10px;
+}
+.profile .address-local button{
+    display: block;
+    margin: 10px auto;
+}
+
+.profile .slmh p{
+    display: block;
+    margin-left:10px;
+}
+.profile .slmh .aa{
+    margin-top: 10px;
+}
+.profile .prof{
+    width: 50%;
+    margin: 0px auto;
+    padding-top: 20px;	
+    
+}
+.profile .change-prof{
+    position: absolute;
+    z-index: 99;
+    width: 50%;
+    
+    background-color: #fff;
+    border-radius: 5px;
+    animation: myAnimation 0.5s ease-out;
+    -moz-animation: myAnimation 0.5s ease-out;
+    -webkit-animation: myAnimation 0.5s ease-out;
+    -o-animation: myAnimation 0.5s ease-out;
+}
+.profile #pa-inform {
+    height: 270px;
+}
+@keyframes myAnimation {
+    from {opacity: 0;}
+    to {opacity: 1;}
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+.profile .current-order th,.profile .current-order td{
+    vertical-align: middle;
+}
+.profile .current-order{
+    width: 60%;
+    margin: 0 auto;
+}
+.profile .change-prof input[type=text],.change-prof input[type=email],.change-prof input[type=tel],.nguyencho{
+    width: 90%;
+    margin: 5px auto;
+}
+.profile .change-prof input[type=checkbox]{
+    margin-left: 45px;
+}
+.profile .change-prof .pass{
+    width: 80%;
+    margin-left:30%;
+}
+.profile .change-prof .pass{
+    margin-left: 40px;
+}
+.profile .change-prof .btn-success{
+    display: block;
+    margin:10px auto;
+}
+.profile .change-prof .btn-secondary{
+    color:white;
+    width: 40px;
+    height: 40px;
+    border:none;
+    float: right;
+    margin-right: 5px;
+    margin-top:5px;
+    border-radius: 50%;
+    background: #CCC;
+}
+@media only screen and (max-width: 1230px){
+    .profile .infom{
+        height: 300px;
+    }
+    .profile .address-local{
+        height: 300px;
+    }
+    .profile .slmh{
+        top:325px;			
+    }
+    .profile .allprof{
+        height: 450px;
+    }
+}

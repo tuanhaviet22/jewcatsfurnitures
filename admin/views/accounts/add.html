@@ -1,0 +1,42 @@
+<!-- BEGIN: ADD -->
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="{baseUrl}/admin/css/accounts/add.css">
+
+<!-- HTML -->
+<form method="POST" enctype="multipart/form-data">
+	<table>
+		<tr>
+			<td colspan="2"><h4>Add account</h4></td>
+		</tr>
+		<tr>
+			<th>Username</th>
+			<td>
+				<input type="text" name="txtUsn" class="form-control">
+			</td>
+		</tr>
+		<tr>
+			<th>Password</th>
+			<td>
+				<input type="password" name="txtPwd" class="form-control">
+			</td>
+		</tr>
+		<tr>
+			<th>Staff ID</th>
+			<td>
+				<input type="text" name="txtStfId" class="form-control">
+			</td>
+		</tr>
+        <tr>
+			<th>Role</th>
+			<td>
+				{selectBox}
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><input type="submit" id="submit-btn" class="btn btn-primary" value="Add"></td>
+		</tr>
+		<tr>{msg}</tr>
+	</table>
+</form>
+<!-- END: ADD -->

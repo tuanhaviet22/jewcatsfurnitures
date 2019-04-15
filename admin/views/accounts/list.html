@@ -1,0 +1,45 @@
+<!-- BEGIN: LIST -->
+<!-- jQuery for AJAX (duma!) -->
+<script src="{baseUrl}/admin/js/jquery-3.3.1.min.js"></script>
+
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="{baseUrl}/admin/css/accounts/list.css">
+
+<!-- AJAX -->
+<script type="text/javascript" src="{baseUrl}/admin/js/ajax/accounts-search.js"></script>
+
+<!-- HTML -->
+<h4>Accounts</h4>
+	
+<a href="?m=accounts&a=add">
+	<input type="button" class="btn btn-secondary" value="Add" >
+</a>
+
+<table class="table">
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>User Name</th>
+			<th>Staff Name</th>
+            <th>Role</th>
+			<th>Action</th>
+		<tr>
+	</thead>
+	<tbody id="search-records">
+		<!-- BEGIN: LOOP -->
+		<tr>
+			<td>{LOOP.id}</td>
+			<td>{LOOP.acc_usn}</td>
+			<td>{stfname}</td>
+            <td>{role}</td>
+			<td>
+				<a href="?m=accounts&a=edit&id={LOOP.id}">Edit</a>
+				|
+				<a href="?m=accounts&a=delete&id={LOOP.id}">Delete</a>
+			</td>
+		</tr>
+		<!-- END: LOOP -->
+	</tbody>
+</table>
+
+<!-- END: LIST -->

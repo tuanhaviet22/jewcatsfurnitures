@@ -1,0 +1,57 @@
+    <!-- BEGIN: ORDER_DETAIL -->
+    <link rel="stylesheet" href="{baseUrl}/css/modules/order_detail.css">
+    <section class="order_detail">  
+     <section class="container">
+          <div class="row row-rule">
+              <!-- BEGIN: LOOPS -->
+            <div class="col-md-3">
+                <img class="img-fluid" src="{LOOPS.baseUrl}/admin/images/products/{LOOPS.pro_img}" alt="{LOOPS.pro_name}">
+            </div>
+            <div class="col-md-3">
+                <span>Product name: {LOOPS.pro_name}</span><br>
+           </div>
+            <div class="col-md-2">
+                <span>Price: {LOOPS.pro_price}$</span>
+            </div>
+            <div class="col-md-2">
+                <span>Quantity: {LOOPS.pro_quantity}</span>
+            </div>
+              <!-- END: LOOPS -->
+
+          </div>
+          <div class="row " style="margin-top : 40px; ">
+              <div class="col-md-6  cart" >
+                <h3>Delivery address</h3>
+                <span>Name: {cus_name}</span>
+                <br>
+                <span>Address: {cus_address} </span>
+                <br>
+                <span>Phone: {cus_phone}</span>
+              </div>
+              <div class="col-md-5 offset-md-1 cart">
+                <h3>Total</h3>
+                <table>
+                    <tr>
+                        <td>Products</td>
+                        <td>{pro_total_price}$</td>
+                    </tr>
+                    <tr style="border-bottom : 1px solid gray ;">
+                        <td>Shipping costs</td>
+                        <td>15$</td>
+
+                    </tr>
+                    <tr>
+                        <td>Total (Include the VAT)
+                            <br><br>
+                            Thanh toan bang hinh thuc COD
+                        </td>
+                        <td>{total_price}$</td>
+                    </tr>
+                </table>
+              </div>
+          </div>
+
+      </section>
+    </section>
+    <!-- END: ORDER_DETAIL -->
+             

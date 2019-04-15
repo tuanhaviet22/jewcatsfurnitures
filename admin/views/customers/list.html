@@ -1,0 +1,45 @@
+<!-- BEGIN: LIST -->
+<!-- jQuery for AJAX (duma!) -->
+<script src="{baseUrl}/admin/js/jquery-3.3.1.min.js"></script>
+
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="{baseUrl}/admin/css/customers/list.css">
+
+<!-- AJAX -->
+<script type="text/javascript" src="{baseUrl}/admin/js/ajax/customers-search.js"></script>
+
+<!-- HTML -->
+<h4>Customers</h4>
+<div class="row">
+	<div class="input-group col-sm-4" id="search-box">
+		<div class="input-group-prepend">
+			<span class="input-group-text">Search</span>
+		</div>
+		<input type="text" name="txtSearch" class="form-control">
+	</div>
+</div>
+
+<table class="table">
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>Name</th>
+			<th>User Name</th>
+            <th>Phone Number</th>
+			<th>Mail</th>
+		<tr>
+	</thead>
+	<tbody id="search-records">
+		<!-- BEGIN: LOOP -->
+		<tr>
+			<td>{LOOP.id}</td>
+			<td>{LOOP.cus_name}</td>
+			<td>{LOOP.cus_usn}</td>
+            <td>{LOOP.cus_phone}</td>
+			<td>{LOOP.cus_mail}</td>
+		</tr>
+		<!-- END: LOOP -->
+	</tbody>
+</table>
+
+<!-- END: LIST -->

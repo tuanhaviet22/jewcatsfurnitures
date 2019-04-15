@@ -1,0 +1,46 @@
+<!-- BEGIN: LIST -->
+
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="{baseUrl}/admin/css/orderdetails/list.css">
+
+<!-- HTML -->
+<h4>Order Details</h4>
+<table class="table top-tbl">
+    <tr>
+        <th>Date Time</th>
+        <td>{dateTime}</td>
+    </tr>
+    <tr>
+        <th>Customer Name</th>
+        <td>{cusName}</td>
+    </tr>
+    <tr>
+        <th>Total Price</th>
+        <td>{totalPrice}</td>
+    </tr>
+</table>
+<h4>Products Details</h4>
+<table class="table bottom-tbl">
+	<thead>
+		<tr>
+            <th>Pro Name</th>
+            <th>Brand</th>
+            <th>Category</th>
+            <th>Price</th>
+			<th>Quantity</th>
+		<tr>
+	</thead>
+	<tbody id="search-records">
+		<!-- BEGIN: LOOP -->
+		<tr>
+            <td><a href="?m=productdetails&a=list&id={LOOP.id}">{LOOP.pro_name}</a></td>
+            <td>{LOOP.brd_name}</td>
+            <td>{LOOP.cat_name}</td>
+			<td>{LOOP.pro_price}</td>
+            <td>{LOOP.pro_quantity}</td>
+		</tr>
+		<!-- END: LOOP -->
+	</tbody>
+</table>
+
+<!-- END: LIST -->

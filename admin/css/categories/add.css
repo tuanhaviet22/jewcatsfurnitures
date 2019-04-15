@@ -1,0 +1,31 @@
+#nav-item-cat {
+	font-weight: bold;
+	border: 1px solid #DEE2E6;
+	color: #0056B3;
+}
+
+h4 {
+	margin: 5px auto;
+	text-align: center;
+}
+
+table {
+	margin: 5px auto;
+}
+
+td, th, tr {
+	padding: 5px;
+}
+
+th {
+	text-align: right;
+}
+
+#submit-btn {
+	float: right;
+	width: 70px;
+}
+
+input {
+	padding-left: 5px; 
+}

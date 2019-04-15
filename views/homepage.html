@@ -1,0 +1,210 @@
+<!-- BEGIN: INDEX -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>ฅ^•ω•^ฅ JewCats Furnitures</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sniglet" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+    <!-- Import Carousel -->
+    <link rel="stylesheet" href="{baseUrl}/carousel/docs/assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="{baseUrl}/carousel/docs/assets/owlcarousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="{baseUrl}/css/libs_css/imagehover.min.css">
+    <script src="{baseUrl}/js/libs_js/sweetAlert.js"></script>
+    <script src="{baseUrl}/carousel/docs/assets/vendors/jquery.min.js"></script>
+    <script src="{baseUrl}/carousel/docs/assets/owlcarousel/owl.carousel.js"></script>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="{baseUrl}/css/homepage/homepage.css">
+    <link rel="stylesheet" href="{baseUrl}/css/login.css">
+  
+    <!-- AJAX -->
+    <script src="{baseUrl}/js/ajax/login.js"></script> 
+    <script src="{baseUrl}/js/ajax/register.js"></script>
+
+    <!-- SCRIPTS -->
+    <script src="{baseUrl}/js/login.js"></script>
+    <script src="{baseUrl}/js/homepage.js"></script>
+ 
+    <script type="text/javascript">
+      $(function() {
+          var pull        = $('#pull');
+              menu        = $('nav ul');
+              menuHeight  = menu.height();
+      
+          $(pull).on('click', function(e) {
+              e.preventDefault();
+              menu.slideToggle();
+          });
+      });
+      $(window).resize(function(){
+          var w = $(window).width();
+          if(w > 320 && menu.is(':hidden')) {
+              menu.removeAttr('style');
+          }
+      });
+    </script>
+
+
+  </head>
+  <body>
+    <!-- MODAL -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <!-- MODAL BODY -->
+              <div class="all">
+                <div class="sl1">
+                  <div id="op1">
+                    <span class="cov">LOGIN</span>
+                    <br>
+                    <span class="fa fa-user"></span>
+                  </div>
+                  <div id="op2">
+                    <span class="cov">REGISTER</span>
+                    <br>
+                    <span class='fas fa-pencil-alt'></span>
+                  </div>
+                  <div id="op3">
+                    <span class="cov">FORGOT PASSWORD</span>
+                    <br>
+                    <span class='fas fa-lock'></span>
+                  </div>
+                </div>
+                <div class="sl2">
+                  <div id="section1">
+                    <br><br><br>
+                    <input type="text" name="txtUsn" class="form-control" placeholder="Username" required>
+                    <input type="password" name="txtPw" class="form-control" placeholder="Password" required><br>
+                    <button class="btn btn-primary" id="btn-login">Login</button>                
+                  </div>
+                  <div id="section2">
+                    <br>
+                    <input type="text" name="txtName" class="form-control" placeholder="Full name" required>
+                    <input type="text" name="txtUrs" class="form-control" placeholder="Username" required>
+                    <input type="password" name="txtPass" class="form-control" placeholder="Password" required>
+                    <input type="password" name="txtRepw" class="form-control" placeholder="Re-enter password" required>
+                    <input type="email" name="txtEmail" class="form-control" placeholder="Email" required>
+                    <input type="tel" name="txtTel" class="form-control" placeholder="Phone number" required><br>
+                    <button class="btn btn-success" id="btn-register">Register</button>
+                  </div>
+                  <div id="section3">
+                    <br><br>
+                    <p>Reset your password? Please provide email address that you used when you signed up account. We will send you an email with a confirmation code. </p>
+                    <input type="email" name="txtmail" placeholder="Email" class="form-control" required><br>
+                    <button class="btn btn-danger" id="btn-forgot">Send</button>
+                  </div>
+                </div>
+              </div>
+           <!-- END -->
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- END -->
+     <div class="wraper">
+       <!-- HEADER -->
+        <div id="header">
+            <a href="#">
+                <img src="{baseUrl}/images/index/brand_sale.gif" alt="Band Sale">
+            </a>
+          
+            <div  id="header_bottom">
+              <div class="logo">
+                <img src="{baseUrl}/images/index/prjlogo.png" style="width:100%;margin-top:10px;">
+              </div>
+              <div class="tagSearch">
+                <input type="text" class="form-control form-control-lg" placeholder="You can search everthings in here - chair, lamp, designer....">
+              </div>
+            
+              <div class="header-bottom-tag">
+                <nav class="clearfix">
+                    <ul class="clearfix list-inline">
+                        <li><a href="#"><i style="font-size:16px;color:white;" class="fas fa-home"></i><span>Home</span></a></li>
+                        <li><a href="?m=products&a=products"><i style="font-size:16px;color:white;" class='fas fa-archive'></i><span>Products</span></a></li>
+                        <li><a href="?m=cart&a=cart"><i style='font-size:16px;color:white' class='fas fa-shopping-cart'></i><span>Cart</span></a></li>
+                        <li><a href="?m=contact_us&a=contact_us"><i style='font-size:16px;color:white' class="fas fa-phone"></i><span>Contact us</span></a></li> 
+                        <li><a href="?m=about_us&a=about_us"><i style='font-size:16px;color:white' class="fas fa-users"></i><span>About us</span></a></li> 
+                        <li id="signin-nee-onii-chan"><a href="" data-toggle="modal" data-target="#exampleModal"><i style='font-size:16px;color:white' class="fas fa-sign-in-alt"></i><span>Sign in</span></a></li> 
+                        <li id="onii-chan-no-profile"><a href="?m=profile&a=profile"><i style='font-size:16px;color:white' class="fas fa-user"></i><span></span></a></li>   
+                    </ul>
+                    <a href="#" id="pull"><i  class="fas fa-chevron-down"></i></a>
+                </nav>
+              </div>
+            </div>
+        </div>
+        <!-- END -->
+            
+<!-- AUTOLOAD -->
+{contents}
+<!-- END -->
+
+
+        <!-- FOOTER -->
+        <section class="footer">
+          <div class="dotted"></div>
+          <div class="container">
+          <div class="row" style="text-align:left">
+            <div class="col-6 col-md">
+              <ul>
+                <li><a href="#">guides</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a href="#">about</a></li>
+              </ul></div>
+              <div class="col-6 col-md">
+                <ul>
+                <li><a href="#">team</a></li>
+                <li><a href="#">privacy</a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-md">
+              <span style="color : white ;font-size: 18px;">NEWSLETTERS</span>
+               <!-- <form action="https://script.google.com/macros/s/AKfycbyR62-SOWItFhKHgBFkvQfhL7zV13Nuj6wqOzHkARAmK2sCxRS4/exec"> -->
+                
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Enter your email" aria-label="Enter your email" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary" id="subcribe" type="button" style="color : white !important;">SUBSCRIBE</button>
+                    </div>
+                  </div>
+                   <!-- </form> -->
+                <span><i class="fab fa-facebook-square"></i></span>
+                <span><i class="fab fa-facebook-messenger"></i></span>
+                <span><i class="fab fa-github"></i></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- END -->
+    </div> 
+    
+
+    
+    <!-- END -->
+
+  </body>
+</html>
+<!-- END: INDEX -->
